@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>SSquare</title>
+    <style>
+        .mystyle {
+        border-style: solid;
+    }
+    .change  {
+        display: inline-block;
+        border-style: solid;
+        padding: 0 10px 0 10px;
+        width: 29px;
+        height: 29px;
+        border-radius: 100%;
+    }
+    .countStyle {
+        display: inline-block;
+        border-style: groove;
+        padding: 0 20px 0 20px;
+        margin: 0 10px 0 10px;
+        width: 49px;
+        height: 27px;
+    }
+    .checkbutton{
+        display: inline-block;
+        margin: auto;
+        width: 255px;
+height: 48px;
+background: #D9D9D9;
+border-radius: 24px;
+    }
+
+
+    .red-bor{
+        border: 2px solid red;
+    }
+    .black-bor{
+        border: 2px solid black;
+    }
+    .hor{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .head{
+        justify-content: center;
+        align-items: center;
+        background: #D9D9D9;
+
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img style="width: 100px; border-radius: 10px;" src="../static/images/logo.png" alt="Ourlogo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team.html">
+                  About Us
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Electronics
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Books
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Home & Kitchen
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Sports
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Beauty
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Fashion
+                      </a>
+                    </li>
+                  </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <br />
+              <a type="button" class="btn btn-outline-light me-2" id="signup" href="profile">
+                <i class='bx bxs-user' >Account</i>
+              </a>
+              <a class="btn btn-warning" id="login" href="cart">
+                <i class='bx bxs-cart'>Cart</i>
+              </a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <img style="width: 300px;" src="../static/images/logo.png" class="rounded mx-auto d-block" alt="logo_sSquare" />
+    <div class='row'>
+        <div class='col-9 p-5'>
+            <div class='mystyle row p-4 '>
+                <div class="hor">
+                    <i class='bx bxs-user bx-lg'></i>
+                    <span class="checkbutton hor">USER</span>
+                    <span class="checkbutton hor">PHONE NO.</span>
+                </div>
+                
+            </div>
+            <div class='mystyle row p-4 mt-5'>
+                <div>
+                    <p>DELIVERY ADDRESS</p>
+                    <p>Chinmay Salunkhe, Aravali Hostel IIT Delhi, Hauz Khas, New Delhi, 110016</p>
+                </div>
+                
+            </div>
+            <div class="head row pt-2">
+                <p>+ ADD A NEW ADDRESS</p>
+            </div>
+            <div class="head row pt-2 mt-5">
+                <p>ORDER SUMMARY</p>
+            </div>
+            <div class='mystyle row p-4'>
+                <div class='col-4'>
+                    <img src="../static/images/cart.png" class="img-fluid mb-4" /><br>
+                    <span class='change'>-</span><span class='countStyle'>1</span><span class='change'>+</span>
+                </div>
+                <div class='col-8'>
+                    <p>Logitech G213 Prodigy Gaming Keyboard</p>
+                    <p class="text-muted">Space-Black, 0.8Kg</p>
+                    <p class="text-muted">Seller: xyz Enterprises</p>
+                    <span class="text-decoration-line-through fw-light">
+                        &#8377; 5,000
+                    </span>
+                    <span class="fs-4">&nbsp; &#8377; 3,999</span>
+                    <span>&nbsp; 20%</span><br />
+                </div>
+            </div>
+            <div class="head row pt-2 mt-5">
+                <p>PAYMENT (COD)</p>
+            </div>
+        </div>
+        <div class='col-3 text-center p-5'>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-dark"> Price Details</li>
+                <li class="list-group-item list-group-item-dark text-start">Price</li>
+                <li class="list-group-item list-group-item-dark text-start">Discount</li>
+                <li class="list-group-item list-group-item-dark text-start">Delivery Charges</li>
+                <li class="list-group-item list-group-item-dark text-start">Total Amount</li>
+            </ul>
+            <button type="button" class="mt-5 btn btn-outline-dark">Confirm Order</button>
+
+        </div>
+    </div>
+    <div class="bg-dark text-white">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 p-5 border-top">
+          <div class="col mb-3 text-center">
+            <a href="/" class="d-flex mb-3 px-auto text-decoration-none">
+              <img src="../static/images/logo.png" width="200" class='mx-auto'></img>
+            </a>
+            <p class="text-muted">SalesSquare © 2023</p>
+          </div>
+          <div class="col mb-3">
+            <h5>Know Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="team.html" class="nav-link p-0 text-muted">Our Team</a></li>
+            </ul>
+          </div>
+    
+          <div class="col mb-3">
+            <h5>Our Policy</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="returnPolicy.html" class="nav-link p-0 text-muted">Return Policy</a></li>
+              <li class="nav-item mb-2"><a href="security.html" class="nav-link p-0 text-muted">Security</a></li>
+            </ul>
+          </div>
+    
+          <div class="col mb-3">
+            <h5>Want Help?</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h5>Follow Us On</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
